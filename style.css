@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/cherries\ -\ Copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.5rem;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow:  0 5px 20px rgba(0, 0, 0, 0.5);
+    
+}
+header.sticky .logo{
+    color: #111;
+}
+
+header.sticky .nav li a{
+    color: #111;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color:  #ff0157;
+}
+header .nav{
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease-in;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 25px;
+    
+}
+header .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header .nav li a:hover{
+    color: #ff0157;
+    
+    
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span{
+color: #ff0157;
+font-weight: 700;
+font-size: 1.5em;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height:100% ;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap:wrap ;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border:  15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert .content .box{
+    width:250px ;
+    margin: 15px;
+}
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+  
+}
+
+.expert .content .box .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.expert .content .box .text{
+    padding: 15px 0 5px;
+    
+}
+.expert .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+.testimonials{
+    background: url(./images/2348066457766_status_dc5d84cbfb444911aac33c63a380267a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.white .titleText,
+.white p{
+    color: #fff;
+}
+ .testimonials .content{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: row;
+     margin-top: 40px;
+ }
+ .testimonials .content .box{
+     width:340px ;
+     margin: 20px;
+     padding: 40px;
+     background: #fff;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .testimonials .content .box .imgBx{
+     position: relative;
+     width: 80px;
+     height: 80px;
+     margin-bottom: 20px;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ .testimonials .content .box .imgBx img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+ }
+ .testimonials .content .box .text{
+     text-align: center;
+ }
+ .testimonials .content .box .text p{
+     color: #666;
+     font-style: italic;
+ }
+ .testimonials .content .box .text h3{
+     color: #111;
+     margin-top: 20px;
+     font-size: 1em;
+     font-weight: 600;
+     color: #ff0157;
+ }
+
+ .contact{
+     background: url(./images/2349066450334_status_389216892c9c4558979ff7ba43977520\ -\ Copy\ \(2\).jpg);
+     background-size: cover;
+     background-position: center;
+     margin-top: 20vh;
+ }
+ .contactForm{
+     padding:  75px 50px;
+     background: #fff;
+     box-shadow:  0 15px 50px rgba(0,0,0,0.1);
+     max-width: 500px;
+     margin-top: 50px;
+ }
+ .contactForm h3{
+     color: #111;
+     font-size:1.2em ;
+     margin-bottom: 20px;
+     font-weight: 500;
+ }
+ .contactForm .inputBox{
+     position: relative;
+     width: 100%;
+     margin-bottom: 20px;
+ }
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    border: none;
+    font-weight: 500;
+}
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrightText p{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0157;
+    text-decoration: none;
+    font-weight:500 ;
+}
+header.nav {
+    width: 100%;
+    height: 10%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     
+
+}
+.bar{
+    display: none;
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+
+ @media(max-width:808px){
+
+ body{
+    overflow-x: hidden;
+ }
+     header,
+     header.sticky{
+         padding:  25px 20px;
+         color: #111;
+     }
+     
+
+     
+     header .nav{
+         display: none;
+         padding:  10px 0;
+         width: 100%;
+         line-height: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        transition: 4s;
+        margin-top: 14rem;
+        background: url(./images/avatar_smoke.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: bottom;
+        
+         
+     }
+    
+     header .logo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+     }
+     
+
+     .bar {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px;
+     }
+
+     .banner .content h2{
+    font-size: 2.5em;
+  
+    
+}
+     }
+    
+    
+    
+     
+ 
+
